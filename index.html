@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mahdi Same — Mechanical Engineer working across R&D, robotics, dynamics & control, and mechatronics." />
+  <title>Mahdi Same — Mechanical Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="index.html">MAHDI SAME<span>.</span></a>
+    <nav>
+      <a href="academic.html">Academic &amp; Research</a>
+      <a href="industry.html">Industry</a>
+      <a href="#about">About</a>
+      <a class="nav-cv" href="assets/Mahdi_Same_CV.pdf">CV ↗</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-grid">
+      <div class="hero-copy">
+        <div class="eyebrow"><span>01</span> MECHANICAL ENGINEER / R&amp;D</div>
+        <h1>Engineering between<br><em>research</em> and reality.</h1>
+        <p class="hero-lead">I work across robotics, dynamics &amp; control, mechatronics, and mechanical product development — from research concepts to physical systems.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="academic.html">Academic &amp; Research <span>↗</span></a>
+          <a class="button" href="industry.html">Industry Experience <span>↗</span></a>
+        </div>
+      </div>
+      <div class="hero-visual hero-portrait">
+        <div class="hero-portrait-label">MECHANICAL ENGINEER / R&amp;D</div>
+        <div class="hero-photo-wrap">
+          <div class="photo-frame">
+            <img src="assets/profile.jpg" alt="Mahdi Same" onerror="this.style.display='none';this.nextElementSibling.classList.add('show')">
+            <div class="photo-placeholder">YOUR<br>PHOTO</div>
+          </div>
+          <span class="photo-note">PORTRAIT / 01</span>
+        </div>
+        <div class="hero-portrait-meta">
+          <span>ROBOTICS</span><span>DYNAMICS &amp; CONTROL</span><span>PRODUCT DEVELOPMENT</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="identity section-grid reveal">
+      <div class="section-label"><span>02</span><span>PROFILE</span></div>
+      <div>
+        <p class="statement">A two-sided engineering profile.<br><em>One technical perspective.</em></p>
+        <p class="body-copy">My experience spans research-driven engineering and industrial product development. The same foundation in mechanical engineering connects both: understand the system, design it, build it, test it, and improve it.</p>
+      </div>
+    </section>
+
+    <section class="paths reveal-group">
+      <a class="path-card academic" href="academic.html">
+        <div class="path-top"><span>03 / ACADEMIC</span><span>RESEARCH ↗</span></div>
+        <div class="path-content">
+          <div>
+            <h2>Academic &amp;<br>Research</h2>
+            <p>Education · Research · Publications · Teaching · Courses · Academic Projects</p>
+          </div>
+          <div class="path-symbol academic-symbol"><span>∫</span><span>θ</span><span>τ</span><span>q</span></div>
+        </div>
+        <div class="path-bottom">University / Research / Teaching / Projects <b>→</b></div>
+      </a>
+      <a class="path-card industry" href="industry.html">
+        <div class="path-top"><span>04 / INDUSTRY</span><span>ENGINEERING ↗</span></div>
+        <div class="path-content">
+          <div>
+            <h2>Industry &amp;<br>Engineering</h2>
+            <p>Mechanical Design · R&amp;D · Product Development · Prototyping · Manufacturing</p>
+          </div>
+          <div class="path-symbol industrial-symbol"><span>⌖</span><span>∅</span><span>△</span></div>
+        </div>
+        <div class="path-bottom">Professional experience / Roles / Responsibilities <b>→</b></div>
+      </a>
+    </section>
+
+    <section id="about" class="about section-grid reveal">
+      <div class="section-label"><span>05</span><span>ABOUT</span></div>
+      <div class="about-content">
+        <h2>Mechanical engineering,<br><em>with a systems mindset.</em></h2>
+        <p>I am a mechanical engineer with experience spanning robotics research, dynamics and control, mechatronic and biomedical devices, and industrial R&amp;D. My work has taken me from simulation and controller development to CAD, prototyping, manufacturing, testing and product development.</p>
+        <div class="skill-columns">
+          <div><span>ROBOTICS / CONTROL</span><p>Dynamics · Kinematics · ROS · Choreonoid · MATLAB · Simulink</p></div>
+          <div><span>MECHANICAL / R&amp;D</span><p>SolidWorks · ADAMS · ANSYS · Product Design · Prototyping · Manufacturing</p></div>
+          <div><span>PROGRAMMING</span><p>Python · C++ · MATLAB · C# · Arduino · Git</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>MAHDI SAME.</strong><span>Mechanical Engineer · R&amp;D · Robotics &amp; Control</span></div>
+    <div class="footer-links"><a href="mailto:s.mahdi.same@gmail.com">Email ↗</a><a href="https://github.com/MahdiSme" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+    <small>© 2026 Mahdi Same</small>
+  </footer>
+<script>
+  const revealItems = document.querySelectorAll('.reveal, .reveal-group');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
+    });
+  }, { threshold: 0.12 });
+  revealItems.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
